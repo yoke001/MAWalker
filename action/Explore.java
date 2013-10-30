@@ -67,7 +67,7 @@ public class Explore {
 				return false;
 			}
 			
-			Process.info.username = xpath.evaluate("//your_data/name", doc);
+			Process.info.username = xpath.evaluate("/your_data/name", doc);
 			Process.info.lv = Integer.parseInt(xpath.evaluate("//town_level", doc));
 			Process.info.ap = Integer.parseInt(xpath.evaluate("//ap/current", doc));
 			Process.info.apMax = Integer.parseInt(xpath.evaluate("//ap/max", doc));
